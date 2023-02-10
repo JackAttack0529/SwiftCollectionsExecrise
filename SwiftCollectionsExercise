@@ -1,0 +1,53 @@
+var nums = [2, 64, 1]
+print(nums) // 2, 64, 1
+print(nums.count) // 3
+print(nums.last) // 1
+
+nums.sort()
+print(nums) // 1, 2, 64
+
+nums.reverse()
+print(nums) // 64, 2, 1
+
+nums.shuffle()
+print(nums) // random
+
+
+var marioBros: Array<String> = []
+marioBros.append("Mario")
+marioBros.append("Luigi")
+print(marioBros)
+print(marioBros[1])
+marioBros.insert("Toad", at: 1)
+marioBros.insert("Princess Peach", at: 0)
+print(marioBros)
+
+
+var marioVillians: Set<String> = []
+marioVillians.insert("Bowser")
+marioVillians.insert("Koopa Troopa")
+print(marioVillians.contains("Yoshi"))
+
+var marioBrosGames: Array<String> = []
+marioBrosGames.append("Super Mario World")
+marioBrosGames.append("Super Mario Bros")
+
+//var marioBrosGamesSet = marioBrosGamesSet(array)
+var marioBrosGamesSet = Set(marioBrosGames)
+
+
+let characters: [String : String] = [
+    "Mario" : "Chris Pratt",
+    "Luigi" : "Charlie Day"
+]
+print(characters["Mario"])
+
+
+
+var otherCharactersOne = [
+    ["Donkey Kong", "Cranky Kong"],
+    ["Wario", "King Boo"]
+]
+
+print(otherCharactersOne[0].first)
+print(otherCharactersOne[1].last)
